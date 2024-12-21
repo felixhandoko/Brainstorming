@@ -4,23 +4,26 @@
     font-family: sans-serif;
 }
 
+body{
+    background-color: rgb(240, 235, 227);
+}
+
 .banner {
     width: 100%;
     height: fit-content;
-    background-color: rgb(240, 235, 227);
     background-size: cover;
     background-position: center;
 }
 
 .logo {
-    width: 200px;
-    height: 50px;
-    font-family: cursive;
+    font-family: Quicksand;
     cursor: pointer;
+    margin-left: 70px;
+    font-size: 36px;
 }
 
 .navbar {
-    width: 85%;
+    width: 100%;
     margin: auto;
     padding: 35px 0;
     display: flex;
@@ -28,9 +31,13 @@
     justify-content: space-between;
 }
 
-.navbar ul li {
+.navbar ul{
+    display: flex;
     list-style: none;
-    display: inline-block;
+    margin-right: 50px;
+}
+
+.navbar ul li {
     margin: 0 20px;
     position:relative;
 }
@@ -39,6 +46,11 @@
     text-decoration: none;
     color: black;
     text-transform: uppercase;
+    transition: opacity 0.5s;
+}
+
+.navbar ul li a:hover {
+    opacity: 0.5;
 }
 
 .navbar ul li::after {
@@ -54,5 +66,23 @@
 
 .navbar ul li:hover::after{
     width: 100%;
-    opacity: 0.5;
+}
+
+.footer {
+    background-color: aliceblue;
+    color: rgb(95, 29, 29);
+    text-align: center;
+    padding: 20px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer a{
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
 }
